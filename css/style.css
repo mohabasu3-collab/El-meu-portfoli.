@@ -91,6 +91,11 @@ form textarea {
     resize: vertical;
 }
 
+form input::placeholder,
+form textarea::placeholder {
+    font-style: italic;
+}
+
 form button {
     display: block;
     margin: 0 auto;
@@ -263,4 +268,65 @@ table tbody td:not([colspan="5"]) {
     color: #000000;
     font-weight: bold;
     text-align: center;
+}
+
+.calendari {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.calendari table {
+    width: 100%;
+    margin: 0 auto 35px;
+    border-spacing: 0;
+}
+
+.calendari th {
+    background: #302c2c;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.calendari tbody td {
+    width: 14.28%;
+    height: 38px;
+    border: 0;
+    color: #302c2c;
+    font-weight: normal;
+}
+
+.calendari tbody td.festiu {
+    color: #ed54d7;
+}
+
+.calendari td.nacional,
+.llegenda span.nacional {
+    background: #e00000;
+    color: #fff;
+}
+
+.calendari td.autonomic,
+.llegenda span.autonomic {
+    background: #2baf4a;
+    color: #fff;
+}
+
+.llegenda {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.llegenda li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.llegenda span {
+    display: inline-block;
+    width: 80px;
+    height: 38px;
 }
